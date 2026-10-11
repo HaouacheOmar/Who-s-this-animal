@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "leaflet/dist/leaflet.css";
+
+/* Design tokens: IMPLEMENTATION.md §3.1 — warm cream, terracotta primary, sage "healthy" accent. Light only. */
+@theme inline {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Fraunces", ui-serif, Georgia, serif;
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+}
+
+:root {
+  --background: oklch(0.98 0.015 85);          /* cream */
+  --foreground: oklch(0.25 0.02 50);           /* warm charcoal */
+  --card: oklch(0.995 0.008 85);
+  --card-foreground: oklch(0.25 0.02 50);
+  --popover: oklch(0.995 0.008 85);
+  --popover-foreground: oklch(0.25 0.02 50);
+  --primary: oklch(0.6 0.15 42);               /* terracotta, darkened from 0.65 for AA contrast with white text */
+  --primary-foreground: oklch(0.99 0.005 85);
+  --secondary: oklch(0.93 0.03 80);            /* sand */
+  --secondary-foreground: oklch(0.3 0.03 50);
+  --muted: oklch(0.95 0.02 80);
+  --muted-foreground: oklch(0.48 0.025 55);
+  --accent: oklch(0.72 0.08 150);              /* sage */
+  --accent-foreground: oklch(0.22 0.04 150);
+  --destructive: oklch(0.6 0.2 25);
+  --border: oklch(0.9 0.025 75);
+  --input: oklch(0.88 0.03 75);
+  --ring: oklch(0.6 0.15 42);
+  --radius: 1rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans antialiased;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1, h2, h3 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.01em;
+  }
+  button:not(:disabled), [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}

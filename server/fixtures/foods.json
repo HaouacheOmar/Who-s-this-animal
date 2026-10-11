@@ -1,0 +1,287 @@
+[
+ {
+  "model": "care.foodproduct",
+  "pk": 1,
+  "fields": {
+   "species": 1,
+   "brand": "Atlas Pet",
+   "name": "Puppy Complete 3 kg",
+   "food_type": "dry",
+   "life_stage": "young",
+   "size_class": null,
+   "kcal_per_100g": 400,
+   "where_to_find": "Pet shops in Alger, Oran, Constantine [simulated demo data]",
+   "price_dzd_approx": 5200
+  }
+ },
+ {
+  "model": "care.foodproduct",
+  "pk": 2,
+  "fields": {
+   "species": 1,
+   "brand": "Atlas Pet",
+   "name": "Large Breed Puppy 12 kg",
+   "food_type": "dry",
+   "life_stage": "young",
+   "size_class": "large",
+   "kcal_per_100g": 370,
+   "where_to_find": "Pet shops and vet clinics [simulated demo data]",
+   "price_dzd_approx": 14500
+  }
+ },
+ {
+  "model": "care.foodproduct",
+  "pk": 3,
+  "fields": {
+   "species": 1,
+   "brand": "Atlas Pet",
+   "name": "Giant Breed Puppy 12 kg",
+   "food_type": "dry",
+   "life_stage": "young",
+   "size_class": "giant",
+   "kcal_per_100g": 360,
+   "where_to_find": "Vet clinics, order in pet shops [simulated demo data]",
+   "price_dzd_approx": 15800
+  }
+ },
+ {
+  "model": "care.foodproduct",
+  "pk": 4,
+  "fields": {
+   "species": 1,
+   "brand": "Atlas Pet",
+   "name": "Mini Adult 2 kg",
+   "food_type": "dry",
+   "life_stage": "adult",
+   "size_class": "toy",
+   "kcal_per_100g": 405,
+   "where_to_find": "Pet shops [simulated demo data]",
+   "price_dzd_approx": 3900
+  }
+ },
+ {
+  "model": "care.foodproduct",
+  "pk": 5,
+  "fields": {
+   "species": 1,
+   "brand": "Sahara Nutrition",
+   "name": "Small Adult 3 kg",
+   "food_type": "dry",
+   "life_stage": "adult",
+   "size_class": "small",
+   "kcal_per_100g": 390,
+   "where_to_find": "Pet shops, some supermarkets [simulated demo data]",
+   "price_dzd_approx": 4600
+  }
+ },
+ {
+  "model": "care.foodproduct",
+  "pk": 6,
+  "fields": {
+   "species": 1,
+   "brand": "Sahara Nutrition",
+   "name": "Medium Adult 10 kg",
+   "food_type": "dry",
+   "life_stage": "adult",
+   "size_class": "medium",
+   "kcal_per_100g": 370,
+   "where_to_find": "Pet shops [simulated demo data]",
+   "price_dzd_approx": 11200
+  }
+ },
+ {
+  "model": "care.foodproduct",
+  "pk": 7,
+  "fields": {
+   "species": 1,
+   "brand": "Sahara Nutrition",
+   "name": "Large Adult 15 kg",
+   "food_type": "dry",
+   "life_stage": "adult",
+   "size_class": "large",
+   "kcal_per_100g": 360,
+   "where_to_find": "Pet shops and vet clinics [simulated demo data]",
+   "price_dzd_approx": 15900
+  }
+ },
+ {
+  "model": "care.foodproduct",
+  "pk": 8,
+  "fields": {
+   "species": 1,
+   "brand": "Sahara Nutrition",
+   "name": "Giant Adult 15 kg",
+   "food_type": "dry",
+   "life_stage": "adult",
+   "size_class": "giant",
+   "kcal_per_100g": 350,
+   "where_to_find": "Vet clinics [simulated demo data]",
+   "price_dzd_approx": 17400
+  }
+ },
+ {
+  "model": "care.foodproduct",
+  "pk": 9,
+  "fields": {
+   "species": 1,
+   "brand": "Casbah Feed",
+   "name": "Adult Everyday 4 kg",
+   "food_type": "dry",
+   "life_stage": "adult",
+   "size_class": null,
+   "kcal_per_100g": 365,
+   "where_to_find": "Supermarkets and pet shops [simulated demo data]",
+   "price_dzd_approx": 3800
+  }
+ },
+ {
+  "model": "care.foodproduct",
+  "pk": 10,
+  "fields": {
+   "species": 1,
+   "brand": "Casbah Feed",
+   "name": "Senior 7+ 4 kg",
+   "food_type": "dry",
+   "life_stage": "senior",
+   "size_class": null,
+   "kcal_per_100g": 340,
+   "where_to_find": "Pet shops and vet clinics [simulated demo data]",
+   "price_dzd_approx": 5400
+  }
+ },
+ {
+  "model": "care.foodproduct",
+  "pk": 11,
+  "fields": {
+   "species": 1,
+   "brand": "Casbah Feed",
+   "name": "Chunks in Gravy 400 g",
+   "food_type": "wet",
+   "life_stage": "all",
+   "size_class": null,
+   "kcal_per_100g": 95,
+   "where_to_find": "Supermarkets and pet shops [simulated demo data]",
+   "price_dzd_approx": 450
+  }
+ },
+ {
+  "model": "care.foodproduct",
+  "pk": 12,
+  "fields": {
+   "species": 2,
+   "brand": "Atlas Pet",
+   "name": "Kitten Growth 2 kg",
+   "food_type": "dry",
+   "life_stage": "young",
+   "size_class": null,
+   "kcal_per_100g": 410,
+   "where_to_find": "Pet shops [simulated demo data]",
+   "price_dzd_approx": 4300
+  }
+ },
+ {
+  "model": "care.foodproduct",
+  "pk": 13,
+  "fields": {
+   "species": 2,
+   "brand": "Atlas Pet",
+   "name": "Adult Indoor 2 kg",
+   "food_type": "dry",
+   "life_stage": "adult",
+   "size_class": null,
+   "kcal_per_100g": 380,
+   "where_to_find": "Pet shops, some supermarkets [simulated demo data]",
+   "price_dzd_approx": 3900
+  }
+ },
+ {
+  "model": "care.foodproduct",
+  "pk": 14,
+  "fields": {
+   "species": 2,
+   "brand": "Sahara Nutrition",
+   "name": "Sterilised Adult 2 kg",
+   "food_type": "dry",
+   "life_stage": "adult",
+   "size_class": null,
+   "kcal_per_100g": 355,
+   "where_to_find": "Pet shops and vet clinics [simulated demo data]",
+   "price_dzd_approx": 4500
+  }
+ },
+ {
+  "model": "care.foodproduct",
+  "pk": 15,
+  "fields": {
+   "species": 2,
+   "brand": "Sahara Nutrition",
+   "name": "Senior 11+ 1.5 kg",
+   "food_type": "dry",
+   "life_stage": "senior",
+   "size_class": null,
+   "kcal_per_100g": 360,
+   "where_to_find": "Vet clinics [simulated demo data]",
+   "price_dzd_approx": 4100
+  }
+ },
+ {
+  "model": "care.foodproduct",
+  "pk": 16,
+  "fields": {
+   "species": 2,
+   "brand": "Casbah Feed",
+   "name": "Pouch in Jelly 85 g",
+   "food_type": "wet",
+   "life_stage": "all",
+   "size_class": null,
+   "kcal_per_100g": 82,
+   "where_to_find": "Supermarkets and pet shops [simulated demo data]",
+   "price_dzd_approx": 180
+  }
+ },
+ {
+  "model": "care.foodproduct",
+  "pk": 17,
+  "fields": {
+   "species": 3,
+   "brand": "Kabylie Seeds",
+   "name": "Small Bird Mix (budgies, canaries, finches) 1 kg",
+   "food_type": "seed",
+   "life_stage": "all",
+   "size_class": null,
+   "kcal_per_100g": 380,
+   "where_to_find": "Pet shops and bird markets [simulated demo data]",
+   "price_dzd_approx": 900
+  }
+ },
+ {
+  "model": "care.foodproduct",
+  "pk": 18,
+  "fields": {
+   "species": 3,
+   "brand": "Kabylie Seeds",
+   "name": "Parrot & Large Parakeet Mix 2 kg",
+   "food_type": "seed",
+   "life_stage": "all",
+   "size_class": null,
+   "kcal_per_100g": 420,
+   "where_to_find": "Pet shops and bird markets [simulated demo data]",
+   "price_dzd_approx": 2600
+  }
+ },
+ {
+  "model": "care.foodproduct",
+  "pk": 19,
+  "fields": {
+   "species": 3,
+   "brand": "Atlas Pet",
+   "name": "Complete Bird Pellets 700 g",
+   "food_type": "pellet",
+   "life_stage": "all",
+   "size_class": null,
+   "kcal_per_100g": 360,
+   "where_to_find": "Pet shops, order in vet clinics [simulated demo data]",
+   "price_dzd_approx": 1900
+  }
+ }
+]

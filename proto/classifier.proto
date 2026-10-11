@@ -1,0 +1,24 @@
+syntax = "proto3";
+package classifier.v1;
+
+service BreedClassifier {
+  rpc Classify(ClassifyRequest) returns (ClassifyReply);
+}
+
+message ClassifyRequest {
+  bytes image = 1;   // raw file bytes
+  int32 top_k = 2;   // default 3
+}
+
+message Prediction {
+  string label = 1;      // matches breeds.model_label
+  float confidence = 2;  // softmax probability
+}
+
+message ClassifyReply {
+  bool recognized = 1;
+  repeated Prediction predictions = 2;
+  string model_version = 3;
+  string reject_reason = 4;  // "", "unreadable", "too_small", "blurry", "too_dark", "low_confidence"
+  bool possible_mix = 5;     // recognized, but top1 < sure threshold and top1 + top2 >= 0.75
+}

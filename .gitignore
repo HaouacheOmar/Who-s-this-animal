@@ -1,0 +1,16 @@
+venv/
+__pycache__/
+*.pyc
+.env
+node_modules/
+dist/
+media/
+model/artifacts/
+model/runs/
+*_pb2.py
+*_pb2_grpc.py
+*_pb2.pyi
+.playwright-mcp/
+data/
+*.log
+CLAUDE.md

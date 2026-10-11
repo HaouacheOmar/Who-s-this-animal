@@ -1,0 +1,12 @@
+data/
+venv/
+.git/
+.playwright-mcp/
+**/node_modules/
+**/__pycache__/
+client/dist/
+model/runs/
+model/artifacts/
+media/
+docker/.env
+*.log
