@@ -13,7 +13,9 @@ from . import classifier
 from .models import Scan
 
 MAX_UPLOAD = 10 * 2**20
-ALLOWED_FORMATS = {"JPEG", "PNG", "WEBP"}
+# Extension comes from the detected format, never the client filename: a JPEG named evil.html
+# would otherwise be served from /media/ as HTML (stored XSS).
+EXTENSIONS = {"JPEG": ".jpg", "PNG": ".png", "WEBP": ".webp"}
 
 
 class ScanSerializer(serializers.ModelSerializer):
@@ -56,7 +58,7 @@ class ScanViewSet(mixins.ListModelMixin, mixins.DestroyModelMixin, viewsets.Gene
                 fmt = im.format
         except Exception:
             fmt = None
-        if fmt not in ALLOWED_FORMATS:
+        if fmt not in EXTENSIONS:
             return Response({"detail": "Please upload a JPEG, PNG or WEBP image under 10 MB."}, status=400)
 
         upload.seek(0)
@@ -80,7 +82,7 @@ class ScanViewSet(mixins.ListModelMixin, mixins.DestroyModelMixin, viewsets.Gene
             scan.reject_reason = reply.reject_reason
             scan.confidence = reply.predictions[0].confidence if reply.predictions else None
         upload.seek(0)
-        scan.image.save(upload.name, upload, save=False)
+        scan.image.save(f"upload{EXTENSIONS[fmt]}", upload, save=False)
         scan.save()
         return Response(with_care(scan), status=status.HTTP_201_CREATED)
 

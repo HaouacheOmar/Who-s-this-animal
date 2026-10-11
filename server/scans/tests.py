@@ -90,6 +90,12 @@ class ApiFlowTests(TestCase):
             r = self.c.post("/api/scans/", {"image": jpeg()}, format="multipart")
         self.assertEqual((r.data["reject_reason"], r.data["breed"], r.data["care"]), ("low_confidence", None, None))
 
+        evil = jpeg()  # valid JPEG bytes, hostile name: must be stored as .jpg, not served as HTML
+        evil.name = "evil.html"
+        with mock.patch("scans.classifier.classify", return_value=reply()):
+            r2 = self.c.post("/api/scans/", {"image": evil}, format="multipart")
+        self.assertTrue(r2.data["image"].endswith(".jpg"), r2.data["image"])
+
         bad = io.BytesIO(b"GIF89a not really")
         bad.name = "x.gif"
         self.assertEqual(self.c.post("/api/scans/", {"image": bad}, format="multipart").status_code, 400)
