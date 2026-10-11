@@ -12,6 +12,14 @@ Every scan is saved in the owner's history, and pets get their own profiles.
 
 > School / portfolio project: it runs locally with Docker and is not deployed publicly. Care information is general guidance, **not veterinary advice**.
 
+### ▶ 40-second showcase
+
+[![Who's This Animal: 40-second showcase. Click to play.](docs/media/showcase.jpg)](docs/media/showcase.mp4)
+
+**[Watch the showcase video (MP4, 40 s)](docs/media/showcase.mp4)**: sign-up and email verification, a live scan (golden retriever, 83%), three species from one model, the care sheet with grams per day, a personalised pet profile with LLM notes, nearby shops and vets, scan history, and the model's measured results. Every screen is the real app running in Docker.
+
+<sub>Video made with [HyperFrames](https://hyperframes.heygen.com). Music: "Happy Beats / Business Moves vol. 1" by [ende.app](https://ende.app/en). Sound effects: Kenney.nl (CC0). Pet photos: held-out test images from Stanford Dogs, Oxford-IIIT Pet (CC BY-SA 4.0) and iNaturalist (cockatiel © Brodie Verrall, CC BY-NC). The food brands shown are the app's simulated demo data.</sub>
+
 ---
 
 ## Contents
